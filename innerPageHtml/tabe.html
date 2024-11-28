@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="/innerPageCss/style.css">
+    <link rel="stylesheet" href="/innerPageCss/responsive.css">
+
+    <!--Font Awesom Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <!---Font Family-->
+       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        </style>
+</head>
+<body>
+
+
+    <div class="dashboard">
+        <img src="/image/das-left.svg" alt="" class="left-side">
+        <img src="/image/das-right.svg" alt="" class="right-side">
+        <div class="container">
+           <div class="app_page">
+             <div class="manu_v1">
+               <div class="manu_top">
+                  <a href="/HtmlFile/index.html"><img src="/image/dashboard-logo.svg" alt=""></a>
+
+                  <div class="nav tab">
+                    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen"><i class="fa-solid fa-house"></i><span>Home</span></button>
+                    
+                    <button class="tablinks" onclick="openCity(event, 'Course')"><i class="fa-solid fa-book"></i><span>Course</span></button>
+                    
+                    <button class="tablinks" onclick="openCity(event, 'Billing')"><i class="fa-regular fa-credit-card"></i> <span>Billing</span></button>
+                    
+                    <button class="tablinks" onclick="openCity(event, 'Upgrade')"><i class="fa-regular fa-star"></i> <span>Upgrade</span></button>
+                  </div>
+
+                  <!-- <div class="nav">
+                    <a href="#" class="home_text"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                    <a href="/innerPageHtml/course.html"><i class="fa-solid fa-book"></i><span>Course</span></a>
+                    <a href="#" class="tablinks" ><i class="fa-solid fa-phone"></i> <span>Book call</span></a>
+                    <a href="/innerPageHtml/billing.html"><i class="fa-regular fa-credit-card"></i> <span>Billing</span></a>
+                    <a href="#"><i class="fa-regular fa-star"></i> <span>Upgrade</span></a>
+                    <a href="#"><i class="fa-solid fa-video"></i> <span>Videos</span></a>
+                  </div> -->
+               </div>
+                 
+               <div class="manu_bot">
+                <a href="#"><i class="fa-solid fa-user"></i> <span>Profile</span></a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span>Log out</span></a>
+               </div>
+             </div><!--manu_v1 End-->
+            
+             <div id="Home" class="main-dashboard tabcontent">
+               <h1>Happy Monday! 🥳 </h1>
+                <div class="home">
+                   <div class="box">
+                    <h2>Learn</h2>
+                    <p>Continue your progress on the course.</p>
+                    <a href="#">Continue your progress</a>
+                   </div>
+
+                   <div class="box">
+                        <h2>Book a call</h2>
+                    <p>Get coaching from the teacher.</p>
+                    <a href="#">Get Coaching!</a>
+                   </div>
+
+                   <div class="box">
+                   <h2>Discord</h2>
+                    <p>Join our Discord community and meet us!</p>
+                    <a href="#">Join Discord</a>
+                   </div>
+
+                   <div class="box">
+                    <h2>Upgrade plan</h2>
+                    <p>Unlock commenting & coaching.</p>
+                    <a href="#">Upgrade Plan</a>
+                   </div>
+
+                </div>
+
+                 <div class="edit_profile">
+                     <div class="left">
+                       <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                     </div>
+                     <div class="right">
+                      <h3>Edit Profile</h3>
+                      <p>Add your name & info to your account.</p>
+                     </div>
+                 </div>
+             </div><!--main-dashboard End-->
+             <div id="Course" class="main-dashboard tabcontent">
+              <div class="inner-course">
+                  <div class="cheapter-menu">
+                       <h4>CHAPTERS</h4>
+                       <div class="scroll">
+                       <div class="list-item">
+                          <h4>1 .1 - FORMATTING: THE SIX ELEMENTS</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Introduction to Formatting</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Scene Headings I</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Scene Headings II</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Action Slugs I</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Action Slugs II</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>1.2 - FORMATTING: THE SIX ELEMENTS</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Character Names</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Dialogue</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Parentheticals</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Transitions</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">White Space</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>2.1 - THREE ACT STRUCTURE</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">3 Act Overview</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  The Set Up</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Plot Point One</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Midpoint</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Inciting Incident</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+                      
+                       <div class="list-item">
+                          <h4>2.2 - THREE ACT STRUCTURE</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Climax</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Denouement</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">The Big Secret</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Breaking the Rules</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Plot Point Two</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>3.1 - CHARACTER</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Ethical Theory - The Ends Justify the Means</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">3D vs 1D</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Principal and minor characters</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+                        
+                       <div class="list-item">
+                          <h4>3.2 - CHARACTER</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Characterization</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Deep Character</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Passive vs. Active</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#"> Heroes and Villians</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>4.1 - DIALOGUE</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Dialogue Intro</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Exposition</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#"> Differentiation</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Dialogue is NOT normal</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>4.2 - DIALOGUE</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Shoe Leather</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Quality vs Quantity</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Subtext</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Be Fearless</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>5.1 - SCENE</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Scene Headings vs Scene</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  The Sequence</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Two reasons to write a scene</a></li>   
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>5.2 - SCENE</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Setups/Payoffs</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Start Late/End Early</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Conflict</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">The Pivot</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+
+                       <div class="list-item">
+                          <h4>6.1 - THEME</h4>
+                          <ul>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Defining Theme</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">
+                                  Inevitability</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Real World Examples</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Ideology: writer’s bane</a></li>
+                              <li><i class="fa-regular fa-circle"></i><a href="#">Message vs Meaning</a></li>
+                          </ul>
+                       </div><!--list-item End-->
+                      </div><!--Scroll End-->
+                  </div><!--cheapter-menu End-->
+
+                  <main class="main_dashboard">
+                      <div class="text-head">
+                          <h3>Introduction to Formatting</h3>
+                          <p>1 .1 - FORMATTING: THE SIX ELEMENTS</p>
+                      </div>
+                      <div class="video">
+                          <iframe  src="https://app.vidzflow.com/v/PXlS69CDKG" frameborder="0" scrolling="no"></iframe>
+                      </div>
+                      <div class="about-lesson">
+                          <h3>About this lesson</h3>
+                          <p>Why are screenplays so clunky looking? (And why they need to be!)</p>
+                      </div>
+
+                      <div class="comment">
+                          <h5>0 Comments</h5>
+                           <p><i class="fa-regular fa-circle"></i>Active Here: 0</p>
+                      </div>
+                      <div class="comment_profile">
+                          <div class="left">
+                              <img src="/image/profile_img.svg"alt="">
+                               <p>Upload Image</p>
+                               <i class="fa-solid fa-upload"></i>
+                          </div>
+                          <div class="right">
+                              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                              <i class="fa-regular fa-pen-to-square"></i>
+                          </div>
+                      </div>
+                       
+                      <div class="comment-text">
+                          <p>Be the first to leave a comment.</p>
+                      </div>
+
+                      <div class="leave-comment">
+                        <h3>Leave a comment</h3>
+                        <textarea name="" id="" placeholder="Create a new Comment." rows="4" ></textarea> <br>
+                        <a href="#">Submit</a>
+                      </div>
+                      
+                      <div class="complete">
+                          <a href="#">Complete lesson</a>
+                      </div>
+                  </main><!--main_dashboard End-->
+              </div><!--inner course End-->
+            </div><!---main-dashboard end-->
+
+            <div class="billing tabcontent" id="Billing" >
+              <div class="inner-part">
+                  <div class="left">
+                  <div class="top">
+                    <div class="test-mode">
+                      <i class="fa-solid fa-store"></i>
+                      <a href="https://sleeperhitlist-new.webflow.io/">www.sleeperhitlist.com</a>
+                      <p>Test mode</p>
+                    </div><!--Test-Mode -->
+                     <div class="text">
+                      <h3>SleeperHitList</h3>
+                     </div>
+                     <div class="return">
+                      <a href="https://sleeperhitlist-new.webflow.io/">
+                          <i class="fa-solid fa-arrow-left"></i>  
+                          Return to www.sleeperhitlist.com</a>
+                     </div>
+                  </div><!--top End-->
+                  <div class="bottom">
+                      <p > Powered By <span>stripe</span></p>
+                      <p > Learn more about Stripe Billing</p>
+                      <p> Privacy</p>
+                  </div><!--Bottom End-->
+                  </div><!--Left End-->
+                  <div class="right" >
+                     <div class="payment">
+                      <p>Payment method</p>
+                     </div>
+                      
+                     <div class="p-method">
+                      <p>No payment method.</p>
+                     </div>
+      
+                    <div class="add-pay ">
+                      <a href="/innerPageHtml/payment.html"><i class="fa-solid fa-plus"></i> Add payment method</a>
+                    </div>
+      
+                     <div class="invoice">
+                      <p>Invoice history </p>
+                      <div class="search">
+                          <input type="text" placeholder="Filter invoices..." class="hide">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                     </div>
+      
+                     <div class="no-invoice">
+                      <p>No invoice history.  </p>
+                     </div>
+      
+                  </div><!--Right End-->
+              </div><!---inner-part End-->
+             </div><!--Billing End-->
+           </div><!--app_page End-->
+        </div><!--Container End-->
+    </div><!--dashboard End-->
+
+
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+</body>
+</html>
